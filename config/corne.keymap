@@ -49,10 +49,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none      &kp RS(NUMBER_6)   &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp N0       &kp TILDE  &kp LA(LS(NUMBER_2))  &kp LA(L)  &kp MINUS   &kp LEFT_BRACKET  &kp BSPC
-&none      &kp GRAVE          &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &none        &kp LEFT   &kp DOWN              &kp UP     &kp RIGHT   &kp SEMI          &none
-&kp LSHFT  &kp RS(BACKSLASH)  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &none        &kp N      &kp M                 &none      &kp PERIOD  &kp SINGLE_QUOTE  &kp RIGHT_SHIFT
-                                            &kp RIGHT_ALT  &kp LEFT_GUI  &kp LCTRL    &none      &kp SPACE             &none
+&none      &kp RS(NUMBER_6)   &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp N0       &kp LA(N)  &kp LA(E)  &kp LA(L)  &kp MINUS   &kp LEFT_BRACKET  &kp BSPC
+&none      &kp GRAVE          &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &none        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &kp SEMI          &none
+&kp LSHFT  &kp RS(BACKSLASH)  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &none        &kp N      &kp M      &none      &kp PERIOD  &kp SINGLE_QUOTE  &kp RIGHT_SHIFT
+                                            &kp RIGHT_ALT  &kp LEFT_GUI  &kp LCTRL    &none      &kp SPACE  &none
             >;
         };
     };
