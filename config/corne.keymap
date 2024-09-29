@@ -128,9 +128,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none      &none      &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp N0       &kp LA(N)         &kp LA(E)         &kp LA(L)          &kp MINUS   &kp LEFT_BRACKET  &kp BSPC
-&none      &none      &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &none        &kp LEFT          &kp DOWN          &kp UP             &kp RIGHT   &kp SEMI          &none
-&kp LSHFT  &kp GRAVE  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &none        &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &kp RIGHT_BRACKET  &kp LS(N7)  &kp SINGLE_QUOTE  &kp RIGHT_SHIFT
+&none      &none      &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp N0       &kp LA(N)         &kp LA(E)         &kp LA(L)       &kp MINUS   &kp LEFT_BRACKET  &kp BSPC
+&none      &none      &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &none        &kp LEFT          &kp DOWN          &kp UP          &kp RIGHT   &kp SEMI          &none
+&kp LSHFT  &kp GRAVE  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &none        &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &kp LS(LA(N7))  &kp LS(N7)  &kp SINGLE_QUOTE  &kp RIGHT_SHIFT
                                     &kp RIGHT_ALT  &kp LEFT_GUI  &kp LCTRL    &none             &kp SPACE         &none
             >;
         };
