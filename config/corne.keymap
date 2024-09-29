@@ -12,7 +12,7 @@
         m0: m0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(N0))>;
+            bindings = <&kp LS(LG(N0))>;
             label = "M0";
         };
 
@@ -26,14 +26,14 @@
         m2: m2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(NUMBER_2))>;
+            bindings = <&kp LS(LG(NUMBER_2))>;
             label = "M2";
         };
 
         m3: m3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LG(NUMBER_3))>;
+            bindings = <&kp LS(LG(NUMBER_3))>;
             label = "M3";
         };
 
