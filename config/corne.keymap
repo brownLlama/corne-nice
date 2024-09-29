@@ -22,6 +22,69 @@
             bindings = <&kp LS(LG(NUMBER_1))>;
             label = "M1";
         };
+
+        m2: m2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(NUMBER_2))>;
+            label = "M2";
+        };
+
+        m3: m3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(NUMBER_3))>;
+            label = "M3";
+        };
+
+        m4: m4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(LG(LEFT_ARROW)))>;
+            label = "M4";
+        };
+
+        m5: m5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(LG(UP_ARROW)))>;
+            label = "M5";
+        };
+
+        m6: m6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(LG(RIGHT_ARROW)))>;
+            label = "M6";
+        };
+
+        m7: m7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(LEFT_ARROW))>;
+            label = "M7";
+        };
+
+        m8: m8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(RIGHT_ARROW))>;
+            label = "M8";
+        };
+
+        m9: m8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(LG(M)))>;
+            label = "M8";
+        };
+
+        m10: m10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(F10))>;
+            label = "M10";
+        };
     };
 
     keymap {
@@ -50,10 +113,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB       &m0             &m1     &kp HASH      &kp DLLR      &kp C_VOLUME_UP      &kp CARET  &kp AMPS   &kp KP_MULTIPLY    &kp LPAR  &kp RPAR  &kp DELETE
-&kp CAPSLOCK  &kp C_PREVIOUS  &trans  &trans        &trans        &kp C_PLAY_PAUSE     &kp MINUS  &kp EQUAL  &kp LBKT           &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT     &kp C_NEXT      &trans  &trans        &trans        &kp C_VOLUME_DOWN    &kp UNDER  &kp PLUS   &kp LBRC           &kp RBRC  &kp PIPE  &kp RIGHT_SHIFT
-                                      &kp LEFT_ALT  &kp LEFT_GUI  &none                &none      &kp SPACE  &kp RIGHT_CONTROL
+&m10          &m0             &m1  &m2           &m3           &kp C_VOLUME_UP      &kp CARET  &kp AMPS   &kp KP_MULTIPLY    &kp LPAR  &kp RPAR  &kp DELETE
+&kp CAPSLOCK  &kp C_PREVIOUS  &m4  &m5           &m6           &kp C_PLAY_PAUSE     &kp MINUS  &kp EQUAL  &kp LBKT           &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT     &kp C_NEXT      &m7  &m8           &m9           &kp C_VOLUME_DOWN    &kp UNDER  &kp PLUS   &kp LBRC           &kp RBRC  &kp PIPE  &kp RIGHT_SHIFT
+                                   &kp LEFT_ALT  &kp LEFT_GUI  &none                &none      &kp SPACE  &kp RIGHT_CONTROL
             >;
         };
 
