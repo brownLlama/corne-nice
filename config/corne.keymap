@@ -100,9 +100,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&m10          &m0             &scroll_screenshot  &text_screenshot  &screenshot   &kp C_VOLUME_UP      &kp RA(N8)  &kp LS(N8)        &kp RA(N7)         &kp LS(N9)       &kp RA(N9)        &kp DELETE
+&none         &none           &scroll_screenshot  &text_screenshot  &screenshot   &kp C_VOLUME_UP      &kp RA(N8)  &kp LS(N8)        &kp RA(N7)         &kp LS(N9)       &kp RA(N9)        &kp DELETE
 &kp CAPSLOCK  &kp C_PREVIOUS  &left_half          &next_screen      &right_half   &kp C_PLAY_PAUSE     &kp RA(N5)  &kp LS(NUMBER_2)  &kp LS(N0)         &kp EQUAL        &kp RA(NUMBER_6)  &none
-&kp LSHFT     &kp C_NEXT      &one_third          &two_third        &full_screen  &kp C_VOLUME_DOWN    &kp LS(N5)  &kp LS(NUMBER_1)  &kp LS(MINUS)      &kp KP_MULTIPLY  &kp KP_PLUS       &kp RIGHT_SHIFT
+&kp LSHFT     &kp C_NEXT      &one_third          &full_screen      &two_third    &kp C_VOLUME_DOWN    &kp LS(N5)  &kp LS(NUMBER_1)  &kp LS(MINUS)      &kp KP_MULTIPLY  &kp KP_PLUS       &kp RIGHT_SHIFT
                                                   &kp LEFT_ALT      &kp LEFT_GUI  &none                &none       &kp SPACE         &kp RIGHT_CONTROL
             >;
         };
