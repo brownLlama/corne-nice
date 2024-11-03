@@ -10,81 +10,67 @@
 
 / {
     macros {
-        m0: m0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LG(N0))>;
-            label = "M0";
-        };
-
-        m1: m1 {
+        scroll_screenshot: m1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(NUMBER_1))>;
             label = "M1";
         };
 
-        m2: m2 {
+        text_screenshot: m2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(NUMBER_2))>;
             label = "M2";
         };
 
-        m3: m3 {
+        screenshot: m3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LG(NUMBER_3))>;
             label = "M3";
         };
 
-        m4: m4 {
+        left_half: m4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LC(LG(LEFT_ARROW)))>;
             label = "M4";
         };
 
-        m5: m5 {
+        next_screen: m5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LC(LG(UP_ARROW)))>;
             label = "M5";
         };
 
-        m6: m6 {
+        right_half: m6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LC(LG(RIGHT_ARROW)))>;
             label = "M6";
         };
 
-        m7: m7 {
+        one_third: m7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(LEFT_ARROW))>;
             label = "M7";
         };
 
-        m8: m8 {
+        two_third: m8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(RIGHT_ARROW))>;
             label = "M8";
         };
 
-        m9: m9 {
+        full_screen: m9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LC(LG(M)))>;
             label = "M9";
-        };
-
-        m10: m10 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LG(F10))>;
-            label = "M10";
         };
     };
 
@@ -114,10 +100,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&m10          &m0             &m1  &m2           &m3           &kp C_VOLUME_UP      &kp RA(N8)  &kp LS(N8)        &kp RA(N7)         &kp LS(N9)       &kp RA(N9)        &kp DELETE
-&kp CAPSLOCK  &kp C_PREVIOUS  &m4  &m5           &m6           &kp C_PLAY_PAUSE     &kp RA(N5)  &kp LS(NUMBER_2)  &kp LS(N0)         &kp EQUAL        &kp RA(NUMBER_6)  &none
-&kp LSHFT     &kp C_NEXT      &m7  &m8           &m9           &kp C_VOLUME_DOWN    &kp LS(N5)  &kp LS(NUMBER_1)  &kp LS(MINUS)      &kp KP_MULTIPLY  &kp KP_PLUS       &kp RIGHT_SHIFT
-                                   &kp LEFT_ALT  &kp LEFT_GUI  &none                &none       &kp SPACE         &kp RIGHT_CONTROL
+&m10          &m0             &scroll_screenshot  &text_screenshot  &screenshot   &kp C_VOLUME_UP      &kp RA(N8)  &kp LS(N8)        &kp RA(N7)         &kp LS(N9)       &kp RA(N9)        &kp DELETE
+&kp CAPSLOCK  &kp C_PREVIOUS  &left_half          &next_screen      &right_half   &kp C_PLAY_PAUSE     &kp RA(N5)  &kp LS(NUMBER_2)  &kp LS(N0)         &kp EQUAL        &kp RA(NUMBER_6)  &none
+&kp LSHFT     &kp C_NEXT      &one_third          &two_third        &full_screen  &kp C_VOLUME_DOWN    &kp LS(N5)  &kp LS(NUMBER_1)  &kp LS(MINUS)      &kp KP_MULTIPLY  &kp KP_PLUS       &kp RIGHT_SHIFT
+                                                  &kp LEFT_ALT      &kp LEFT_GUI  &none                &none       &kp SPACE         &kp RIGHT_CONTROL
             >;
         };
 
